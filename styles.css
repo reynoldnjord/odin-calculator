@@ -1,0 +1,84 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#title{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.displays{
+    border: 2px solid blue;
+    height: 50px;
+    width: 500px;
+    margin: 5rem;
+    padding: 2.2rem;
+    text-align: right;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: left;
+}
+
+.display{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.second-display{
+    opacity: 0.5;
+    font-size: 20px;
+    text-align: right;
+}
+
+.buttons{
+    display: flex;
+}
+
+.numbers{
+    display: grid;
+    grid-template-rows: 80px 80px 80px 80px;
+    grid-template-columns: 80px 80px 80px;
+    gap: 10px;
+    margin-right: 50px;
+}
+
+[data-key]{
+    font-size: 20px;
+}
+
+[data-operator]{
+    font-size: 20px;
+}
+
+.operations{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.operate{
+    grid-column: 2 / 4;
+    font-size: 30px;
+}
+
+.delete{
+    font-size: 20px;
+}
+
+.clear{
+    font-size: 20px;
+}
+
+.operations > button{
+    width: 80px;
+    height: 80px;
+}
+
